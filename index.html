@@ -49,6 +49,7 @@ if (document.layers) {
 }
 document.oncontextmenu = new Function("return false");
 document.getElementsByClassName('my-img').ondragstart = function() { return false; };
+
 </script>
 
     </head>
@@ -58,7 +59,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
         <div class="navbar navbar-expand-lg bg-light" style="background: white !important;">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">
-				<img src="img/logo.png"  />
+				<img class="lazy" data-src="img/logo.png"  />
 				</a>
 				
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -103,7 +104,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
                         <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
+                            <img class="lazy" data-src="img/hero.png" alt="Hero Image">
                         </div>
                     </div>
                 </div>
@@ -118,7 +119,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                 <!-- <div class="row align-items-center"> -->
                     <!-- <div class="col-lg-6"> -->
                         <!-- <div class="about-img"> -->
-                            <!-- <img src="img/about.jpg" alt="Image"> -->
+                            <!-- <img class="lazy" data-src="img/about.jpg" alt="Image"> -->
                         <!-- </div> -->
                     <!-- </div> -->
                     <!-- <div class="col-lg-6"> -->
@@ -289,7 +290,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk1.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy" data-src="img/sk1.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 
@@ -303,7 +304,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk3.jpg" oncontextmenu="return false"  alt="Image">
+                                <img class="lazy" data-src="img/sk3.jpg" oncontextmenu="return false"  alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Marine and mandala </h3>
@@ -314,7 +315,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img  src="img/sk4.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy"  src="img/sk4.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Tropical Leaves </h3>
@@ -325,7 +326,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk2.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy" data-src="img/sk2.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Ikat </h3>
@@ -336,7 +337,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk6.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy" data-src="img/sk6.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Mandala </h3>
@@ -347,7 +348,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk5.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy" data-src="img/sk5.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Lily's and texture</h3>
@@ -359,7 +360,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk7.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy" data-src="img/sk7.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Tropical </h3>
@@ -371,7 +372,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-img">
-                                <img src="img/sk8.jpg" oncontextmenu="return false" alt="Image">
+                                <img class="lazy" data-src="img/sk8.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
                                 <h3>Jewellery</h3>
@@ -383,7 +384,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sk9.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sk9.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Print</h3>
@@ -395,7 +396,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="portfolio-wrap">
                                     <div class="portfolio-img">
-                                        <img src="img/sk10.jpg" oncontextmenu="return false" alt="Image">
+                                        <img class="lazy" data-src="img/sk10.jpg" oncontextmenu="return false" alt="Image">
                                     </div>
                                     <div class="portfolio-text">
                                         <h3>Python Texture</h3>
@@ -407,7 +408,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="portfolio-wrap">
                                         <div class="portfolio-img">
-                                            <img src="img/sk11.jpg" oncontextmenu="return false" alt="Image">
+                                            <img class="lazy" data-src="img/sk11.jpg" oncontextmenu="return false" alt="Image">
                                         </div>
                                         <div class="portfolio-text">
                                             <h3>Print</h3>
@@ -419,7 +420,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                         <div class="portfolio-wrap">
                                             <div class="portfolio-img">
-                                                <img src="img/sk12.jpg" oncontextmenu="return false" alt="Image">
+                                                <img class="lazy" data-src="img/sk12.jpg" oncontextmenu="return false" alt="Image">
                                             </div>
                                             <div class="portfolio-text">
                                                 <h3>Turkish And Mandala</h3>
@@ -431,7 +432,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                             <div class="portfolio-wrap">
                                                 <div class="portfolio-img">
-                                                    <img src="img/sk13.jpg" oncontextmenu="return false" alt="Image">
+                                                    <img class="lazy" data-src="img/sk13.jpg" oncontextmenu="return false" alt="Image">
                                                 </div>
                                                 <div class="portfolio-text">
                                                     <h3>Table Matt</h3>
@@ -444,7 +445,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="portfolio-wrap">
                                         <div class="portfolio-img">
-                                            <img src="img/sk14.jpg" oncontextmenu="return false" alt="Image">
+                                            <img class="lazy" data-src="img/sk14.jpg" oncontextmenu="return false" alt="Image">
                                         </div>
                                         <div class="portfolio-text">
                                             <h3>Duvet</h3>
@@ -457,7 +458,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                         <div class="portfolio-wrap">
                                             <div class="portfolio-img">
-                                                <img src="img/sk15.jpg" oncontextmenu="return false" alt="Image">
+                                                <img class="lazy" data-src="img/sk15.jpg" oncontextmenu="return false" alt="Image">
                                             </div>
                                             <div class="portfolio-text">
                                                 <h3>Pillow</h3>
@@ -469,7 +470,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.5s">
                                             <div class="portfolio-wrap">
                                                 <div class="portfolio-img">
-                                                    <img src="img/sk16.jpg" oncontextmenu="return false" alt="Image">
+                                                    <img class="lazy" data-src="img/sk16.jpg" oncontextmenu="return false" alt="Image">
                                                 </div>
                                                 <div class="portfolio-text">
                                                     <h3>Cushion</h3>
@@ -481,7 +482,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                                                 <div class="portfolio-wrap">
                                                     <div class="portfolio-img">
-                                                        <img src="img/gd1.jpg" oncontextmenu="return false" alt="Image">
+                                                        <img class="lazy" data-src="img/gd1.jpg" oncontextmenu="return false" alt="Image">
                                                     </div>
                                                     <div class="portfolio-text">
                                                         <h3>Company Website</h3>
@@ -493,7 +494,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="portfolio-wrap">
                                     <div class="portfolio-img">
-                                        <img src="img/gd2.jpg" oncontextmenu="return false" alt="Image">
+                                        <img class="lazy" data-src="img/gd2.jpg" oncontextmenu="return false" alt="Image">
                                     </div>
                                     <div class="portfolio-text">
                                         <h3>Company Website</h3>
@@ -505,7 +506,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/gd3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/gd3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -517,7 +518,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                             <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="portfolio-wrap">
                                     <div class="portfolio-img">
-                                        <img src="img/gd4.jpg" oncontextmenu="return false" alt="Image">
+                                        <img class="lazy" data-src="img/gd4.jpg" oncontextmenu="return false" alt="Image">
                                     </div>
                                     <div class="portfolio-text">
                                         <h3>Company Website</h3>
@@ -529,7 +530,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/gd5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/gd5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -541,7 +542,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/gd6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/gd6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -553,7 +554,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/gd7.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/gd7.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -565,7 +566,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-11 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/gd8.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/gd8.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -577,7 +578,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/res1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/res1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -589,7 +590,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/res2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/res2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -601,7 +602,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/res3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/res3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -613,7 +614,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/res4.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/res4.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -625,7 +626,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/res5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/res5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -637,7 +638,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-5 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/res6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/res6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -650,7 +651,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -663,7 +664,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -676,7 +677,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -688,7 +689,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -701,7 +702,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -714,7 +715,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -727,7 +728,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs7.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs7.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -740,7 +741,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs8.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs8.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -753,7 +754,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-10 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/cs9.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/cs9.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -765,7 +766,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/od1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/od1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -778,7 +779,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/od2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/od2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -790,7 +791,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -802,7 +803,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -814,7 +815,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -827,7 +828,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -839,7 +840,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -851,7 +852,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -863,7 +864,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave7.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave7.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -875,7 +876,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave8.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave8.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -887,7 +888,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave9.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave9.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -899,7 +900,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave10.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave10.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -911,7 +912,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave11.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave11.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -923,7 +924,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave12.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave12.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -935,7 +936,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave13.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave13.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -947,7 +948,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave14.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave14.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -959,7 +960,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/weave15.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/weave15.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -971,7 +972,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tiendye1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tiendye1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -983,7 +984,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tiendye2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tiendye2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -995,7 +996,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tiendye3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tiendye3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1007,7 +1008,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tiendye4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tiendye4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1019,7 +1020,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tiendye5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tiendye5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1031,7 +1032,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tyendye6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tyendye6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1044,7 +1045,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-9 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/tecnique1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/tecnique1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1056,7 +1057,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-9 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/technique2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/technique2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1068,7 +1069,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-9 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/technique5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/technique5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1080,7 +1081,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-9 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/technique4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/technique4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1093,7 +1094,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1105,7 +1106,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1117,7 +1118,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1129,7 +1130,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1141,7 +1142,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1153,7 +1154,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1165,7 +1166,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp7.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp7.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1177,7 +1178,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp8.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp8.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1189,7 +1190,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp9.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp9.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1201,7 +1202,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp10.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp10.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1213,7 +1214,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp11.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp11.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1225,7 +1226,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp12.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp12.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1237,7 +1238,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp13.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp13.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1249,7 +1250,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp14.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp14.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1261,7 +1262,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp15.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp15.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1273,7 +1274,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp16.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp16.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1285,7 +1286,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp17.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp17.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1297,7 +1298,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp18.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp18.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1309,7 +1310,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp19.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp19.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1321,7 +1322,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp20.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp20.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1333,7 +1334,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/sp21.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/sp21.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1345,7 +1346,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product1.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product1.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1357,7 +1358,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product2.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product2.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1369,7 +1370,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/prioduct3.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/prioduct3.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1381,7 +1382,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product4.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product4.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1393,7 +1394,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product5.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product5.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1407,7 +1408,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product6.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product6.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1419,7 +1420,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product7.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product7.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1431,7 +1432,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product8.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product8.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1443,7 +1444,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product9.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product9.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1455,7 +1456,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product10.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product10.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1467,7 +1468,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/product11.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/product11.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1479,7 +1480,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1491,7 +1492,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1503,7 +1504,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1515,7 +1516,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1527,7 +1528,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1539,7 +1540,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1551,7 +1552,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print7.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print7.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1563,7 +1564,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print8.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print8.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1575,7 +1576,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print9.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print9.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1587,7 +1588,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print10.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print10.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1599,7 +1600,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print11.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print11.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1611,7 +1612,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print12.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print12.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1623,7 +1624,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print13.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print13.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1635,7 +1636,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print14.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print14.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1647,7 +1648,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print15.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print15.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1659,7 +1660,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print16.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print16.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1671,7 +1672,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print17.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print17.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1683,7 +1684,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print18.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print18.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1695,7 +1696,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print19.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print19.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1707,7 +1708,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print20.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print20.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1719,7 +1720,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print21.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print21.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1731,7 +1732,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print22.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print22.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1743,7 +1744,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print23.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print23.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1755,7 +1756,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/print24.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/print24.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1767,7 +1768,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics1.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics1.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1779,7 +1780,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics2.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics2.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1791,7 +1792,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics3.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics3.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1803,7 +1804,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics4.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics4.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1815,7 +1816,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics5.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics5.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1827,7 +1828,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics6.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics6.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1839,7 +1840,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics7.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics7.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1851,7 +1852,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics8.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics8.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1863,7 +1864,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics9.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics9.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1875,7 +1876,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics10.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics10.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1887,7 +1888,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics11.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics11.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1899,7 +1900,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics12.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics12.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1911,7 +1912,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics13.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics13.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1923,7 +1924,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics14.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics14.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1935,7 +1936,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics15.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics15.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1947,7 +1948,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics16.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics16.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1959,7 +1960,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics17.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics17.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1971,7 +1972,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics18.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics18.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1983,7 +1984,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics19.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics19.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -1995,7 +1996,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics20.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics20.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2007,7 +2008,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics21.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics21.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2019,7 +2020,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics22.jpg"  oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics22.jpg"  oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2031,7 +2032,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics23.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics23.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2043,7 +2044,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics24.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics24.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2055,7 +2056,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics25.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics25.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2067,7 +2068,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics26.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics26.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2079,7 +2080,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics27.jpeg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics27.jpeg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2091,7 +2092,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics28.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics28.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2103,7 +2104,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics29.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics29.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2115,7 +2116,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics30.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics30.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2127,7 +2128,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics31.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics31.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2139,7 +2140,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics32.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics32.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2151,7 +2152,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
                                 <div class="portfolio-img">
-                                    <img src="img/graphics33.jpg" oncontextmenu="return false" alt="Image">
+                                    <img class="lazy" data-src="img/graphics33.jpg" oncontextmenu="return false" alt="Image">
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Company Website</h3>
@@ -2291,7 +2292,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                 <!-- <div class="owl-carousel testimonials-carousel"> -->
                     <!-- <div class="testimonial-item"> -->
                         <!-- <div class="testimonial-img"> -->
-                            <!-- <img src="img/testimonial-1.jpg" alt="Image"> -->
+                            <!-- <img class="lazy" data-src="img/testimonial-1.jpg" alt="Image"> -->
                         <!-- </div> -->
                         <!-- <div class="testimonial-text"> -->
                             <!-- <p> -->
@@ -2303,7 +2304,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- </div> -->
                     <!-- <div class="testimonial-item"> -->
                         <!-- <div class="testimonial-img"> -->
-                            <!-- <img src="img/testimonial-2.jpg" alt="Image"> -->
+                            <!-- <img class="lazy" data-src="img/testimonial-2.jpg" alt="Image"> -->
                         <!-- </div> -->
                         <!-- <div class="testimonial-text"> -->
                             <!-- <p> -->
@@ -2315,7 +2316,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- </div> -->
                     <!-- <div class="testimonial-item"> -->
                         <!-- <div class="testimonial-img"> -->
-                            <!-- <img src="img/testimonial-3.jpg" alt="Image"> -->
+                            <!-- <img class="lazy" data-src="img/testimonial-3.jpg" alt="Image"> -->
                         <!-- </div> -->
                         <!-- <div class="testimonial-text"> -->
                             <!-- <p> -->
@@ -2342,7 +2343,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s"> -->
                         <!-- <div class="team-item"> -->
                             <!-- <div class="team-img"> -->
-                                <!-- <img src="img/team-1.jpg" alt="Image"> -->
+                                <!-- <img class="lazy" data-src="img/team-1.jpg" alt="Image"> -->
                             <!-- </div> -->
                             <!-- <div class="team-text"> -->
                                 <!-- <h2>Mollie Ross</h2> -->
@@ -2362,7 +2363,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s"> -->
                         <!-- <div class="team-item"> -->
                             <!-- <div class="team-img"> -->
-                                <!-- <img src="img/team-2.jpg" alt="Image"> -->
+                                <!-- <img class="lazy" data-src="img/team-2.jpg" alt="Image"> -->
                             <!-- </div> -->
                             <!-- <div class="team-text"> -->
                                 <!-- <h2>Dylan Adams</h2> -->
@@ -2382,7 +2383,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s"> -->
                         <!-- <div class="team-item"> -->
                             <!-- <div class="team-img"> -->
-                                <!-- <img src="img/team-3.jpg" alt="Image"> -->
+                                <!-- <img class="lazy" data-src="img/team-3.jpg" alt="Image"> -->
                             <!-- </div> -->
                             <!-- <div class="team-text"> -->
                                 <!-- <h2>Jennifer Page</h2> -->
@@ -2402,7 +2403,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s"> -->
                         <!-- <div class="team-item"> -->
                             <!-- <div class="team-img"> -->
-                                <!-- <img src="img/team-4.jpg" alt="Image"> -->
+                                <!-- <img class="lazy" data-src="img/team-4.jpg" alt="Image"> -->
                             <!-- </div> -->
                             <!-- <div class="team-text"> -->
                                 <!-- <h2>Josh Dunn</h2> -->
@@ -2475,7 +2476,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- <div class="col-lg-6"> -->
                         <!-- <div class="blog-item wow fadeInUp" data-wow-delay="0.1s"> -->
                             <!-- <div class="blog-img"> -->
-                                <!-- <img src="img/blog-1.jpg" alt="Blog"> -->
+                                <!-- <img class="lazy" data-src="img/blog-1.jpg" alt="Blog"> -->
                             <!-- </div> -->
                             <!-- <div class="blog-text"> -->
                                 <!-- <h2>Lorem ipsum dolor sit amet</h2> -->
@@ -2495,7 +2496,7 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                     <!-- <div class="col-lg-6"> -->
                         <!-- <div class="blog-item wow fadeInUp" data-wow-delay="0.3s"> -->
                             <!-- <div class="blog-img"> -->
-                                <!-- <img src="img/blog-2.jpg" alt="Blog"> -->
+                                <!-- <img class="lazy" data-src="img/blog-2.jpg" alt="Blog"> -->
                             <!-- </div> -->
                             <!-- <div class="blog-text"> -->
                                 <!-- <h2>Lorem ipsum dolor sit amet</h2> -->
@@ -2573,5 +2574,13 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+        <script>
+            $(function() {
+                $('.lazy').Lazy();
+            });
+        </script>
     </body>
+    
 </html>
