@@ -23,34 +23,33 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-		
-		<script type="text/javascript">
-var message="Right-click has been disabled";
-function clickIE() {
-    if (document.all) {
-        (message);
-        return false;
-    }
-}
-function clickNS(e) {
-    if (document.layers || (document.getElementById && !document.all)) {
-        if (e.which == 2||e.which == 3) {
-            (message);
-            return false;
-        }
-    }
-}
-if (document.layers) {
-    document.captureEvents(Event.MOUSEDOWN);
-    document.onmousedown = clickNS;
-} else {
-    document.onmouseup = clickNS;
-    document.oncontextmenu = clickIE;
-}
-document.oncontextmenu = new Function("return false");
-document.getElementsByClassName('my-img').ondragstart = function() { return false; };
 
-</script>
+		<script type="text/javascript">
+            var message="Right-click has been disabled";
+            function clickIE() {
+                if (document.all) {
+                    (message);
+                    return false;
+                }
+            }
+            function clickNS(e) {
+                if (document.layers || (document.getElementById && !document.all)) {
+                    if (e.which == 2||e.which == 3) {
+                        (message);
+                        return false;
+                    }
+                }
+            }
+            if (document.layers) {
+                document.captureEvents(Event.MOUSEDOWN);
+                document.onmousedown = clickNS;
+            } else {
+                document.onmouseup = clickNS;
+                document.oncontextmenu = clickIE;
+            }
+            document.oncontextmenu = new Function("return false");
+            document.getElementsByClassName('my-img').ondragstart = function() { return false; };
+        </script>
 
     </head>
 
@@ -264,10 +263,11 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                 <div class="row">
                     <div class="col-12">
                         <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
+                            
                             <li data-filter=".filter-7">Product</li>
                             <li data-filter=".filter-11">Digital Prints</li>
                             <li data-filter=".filter-6">Graphics Designing</li>
+                            <li data-filter=".filter-12">Branding</li>
                             <li data-filter=".filter-10">Color Scheme</li>
                             <li data-filter=".filter-5">Research Boards</li>
                             <li data-filter=".filter-3">Print</li>
@@ -276,10 +276,8 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                             <li data-filter=".filter-2">Weaving</li>
                             <li data-filter=".filter-9">Art Work</li>
                             <li data-filter=".filter-4">Screenprinting</li>
-                           
-                            
-                            
-                            
+                            <li data-filter="*" class="filter-active">All</li>
+
                         </ul>
                     </div>
                 </div>
@@ -290,13 +288,10 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                 <img class="lazy" data-src="img/sk1.jpg" oncontextmenu="return false" alt="Image">
                             </div>
                             <div class="portfolio-text">
-                                
                                 <a class="btn"  href="img/sk1.jpg"  data-lightbox="portfolio"  >+</a>
                             </div>
                         </div>
                     </div>
-
-                    
 
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
@@ -1127,7 +1122,18 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                             </div>
                         </div>
 
-                       
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="portfolio-wrap">
+                                <div class="portfolio-img">
+                                    <img class="lazy" data-src="img/weave14.jpg" oncontextmenu="return false" alt="Image">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3></h3>
+                                    <a class="btn" href="img/weave14.jpg" data-lightbox="portfolio">+</a>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
@@ -1140,6 +1146,32 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="portfolio-wrap">
+                                <div class="portfolio-img">
+                                    <img class="lazy" data-src="img/weave16.jpg" oncontextmenu="return false" alt="Image">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3></h3>
+                                    <a class="btn" href="img/weave16.jpg" data-lightbox="portfolio">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="portfolio-wrap">
+                                <div class="portfolio-img">
+                                    <img class="lazy" data-src="img/weave17.jpg" oncontextmenu="return false" alt="Image">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3></h3>
+                                    <a class="btn" href="img/weave17.jpg" data-lightbox="portfolio">+</a>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-8 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="portfolio-wrap">
@@ -2497,6 +2529,249 @@ document.getElementsByClassName('my-img').ondragstart = function() { return fals
                             </div>
                         </div>
 
+                    <!-- Branding-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga.jpg" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-2.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-2.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-3.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-3.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-4.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-4.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-5.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-5.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-6.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-6.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-7.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-7.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-8.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-8.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-9.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-9.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-10.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-10.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-11.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-11.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-12.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-12.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-13.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-13.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-14" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-14" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-15.jpg" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-15.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-16.jpg" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-16.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-17.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-17.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-18.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-18.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-19.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-19.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-20.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-20.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-21.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-21.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img class="lazy" data-src="img/ga-22.png" oncontextmenu="return false" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3></h3>
+                                <a class="btn" href="img/ga-22.png" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         <!-- Portfolio End -->
